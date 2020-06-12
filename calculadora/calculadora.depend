@@ -1,0 +1,55 @@
+# depslib dependency file v1.0
+1585349197 source:c:\users\bruno\desktop\calculadora\main.c
+	<stdio.h>
+	<stdlib.h>
+	"derenzis.h"
+	"validaciones.h"
+
+1585349170 source:c:\users\bruno\desktop\calculadora\derenzis.c
+	"derenzis.h"
+	<stdio.h>
+	<stdlib.h>
+
+1585349191 c:\users\bruno\desktop\calculadora\derenzis.h
+
+1585347964 source:c:\users\bruno\desktop\calculadora\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"validaciones.h"
+
+1585348387 c:\users\bruno\desktop\calculadora\validaciones.h
+
+1586197491 source:c:\users\bruno\desktop\estudio\programacion\utn tec.prog\prog&lab1\programacion 1\tps\calculadora\derenzis.c
+	<stdio.h>
+	<stdlib.h>
+	"validaciones.h"
+	"derenzis.h"
+
+1586196304 c:\users\bruno\desktop\estudio\programacion\utn tec.prog\prog&lab1\programacion 1\tps\calculadora\derenzis.h
+
+1586194824 c:\users\bruno\desktop\estudio\programacion\utn tec.prog\prog&lab1\programacion 1\tps\calculadora\utn.h
+
+1586391559 source:c:\users\bruno\desktop\estudio\programacion\utn tec.prog\prog&lab1\programacion 1\tps\calculadora\main.c
+	<stdio.h>
+	<stdlib.h>
+	"derenzis.h"
+	"validaciones.h"
+
+1586391528 source:c:\users\bruno\desktop\estudio\programacion\utn tec.prog\prog&lab1\programacion 1\tps\calculadora\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"validaciones.h"
+
+1586390390 c:\users\bruno\desktop\estudio\programacion\utn tec.prog\prog&lab1\programacion 1\tps\calculadora\validaciones.h
+
+1586194798 source:c:\users\bruno\desktop\estudio\programacion\utn tec.prog\prog&lab1\programacion 1\tps\calculadora\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"utn.h"
+
