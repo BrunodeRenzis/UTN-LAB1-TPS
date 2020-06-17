@@ -571,3 +571,71 @@ int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order)
 
 }
 
+LinkedList* ll_map(LinkedList* this, void* (*pFunc)(void*))
+{
+    LinkedList* pAux = NULL;
+    void* pAuxElement = NULL;
+    int len=ll_len(this);
+    if(this!=NULL &&len>0)
+    {
+        pAux=ll_newLinkedList();
+        if(pAux!=NULL)
+        {
+            for(int i=0; i<len; i++)
+            {
+                pAuxElement=ll_get(this, i);
+                if(pAuxElement!=NULL)
+                {
+                    pAuxElement=pFunc(pAuxElement);
+                    ll_add(pAux,pAuxElement);
+                }
+            }
+        }
+    }
+    return pAux;
+}
+
+
+
+LinkedList* ll_filter(LinkedList* this, int (*pFunc)(void*))
+{
+    LinkedList* pAux = NULL;
+    void* pAuxElement = NULL;
+    int len=ll_len(this);
+    if(this != NULL &&len>0)
+    {
+        pAux = ll_newLinkedList();
+        if(pAux != NULL)
+        {
+            for(int i=0; i<len; i++)
+            {
+                pAuxElement=ll_get(this, i);
+                if(pAuxElement!=NULL)
+                {
+                    if(pFunc(pAuxElement)==1)
+                    {
+                        ll_add(pAux,pAuxElement);
+                    }
+                }
+
+            }
+        }
+    }
+    return pAux;
+}
+
+void* ll_reduce(LinkedList* this, void*(*pFunc)(void*, void*),void* total)
+{
+    void* pAuxElement = NULL;
+    int i;
+    int len=ll_len(this);
+    if(this != NULL && len> 0)
+    {
+        for(i = 0; i <len; i++)
+        {
+            pAuxElement = ll_get(this, i);
+            total = pFunc(total,pAuxElement);
+        }
+    }
+    return total;
+}
